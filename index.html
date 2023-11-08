@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shopping List</title>
+	<link rel="stylesheet" href="./list.css">
+</head>
+<body>
+	<h1 class="heading">Shopping List</h1>
+	<div class="container">
+		<div class="inputs">
+			<label for="input">Add item</label>
+			<input type="text" id="input">
+			<button class="btn" id="need"style="--clr:green" onclick="addToNeed()">Need</button>
+			<button class="btn" style="--clr:purple" id="have" onclick="addToHave()">Have</button>
+		</div>
+		<div class="itemAdd">
+			<div class="needBox">
+				<h2 class="needHeading">Need</h2>
+			<ul id="needText">
+				
+			</ul>
+		</div>
+		<div class="haveBox">
+			<h2 class="haveHeading">Have</h2>
+			<ul id="haveText">
+				
+			</ul>
+		</div>
+		</div>
+	</div>
+	<script src="./style.js"></script>
+</body>
+</html>
